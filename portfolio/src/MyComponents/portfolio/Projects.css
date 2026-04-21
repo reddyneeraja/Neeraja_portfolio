@@ -1,0 +1,136 @@
+.projects-container {
+  padding: -1rem 1rem;
+  background-color: black;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #7b2ff7;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 35px;
+  max-width: 1150px;
+  margin: auto;
+}
+
+.project-unique-card {
+  position: relative;
+  padding: 28px;
+  border-radius: 20px;
+  background: black;
+  /* color: #fff; */
+  backdrop-filter: blur(14px);
+  border: 2px solid rgba(19, 27, 88, 0.15);
+  transition: 0.4s ease;
+  overflow: hidden;
+  border: 1px solid gray;
+
+}
+
+.project-unique-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 25px 55px rgba(19, 27, 88, 0.25);
+  border-color: #6b6b9d;
+}
+
+
+.project-unique-card:hover .project-shine {
+  top: 100%;
+}
+
+.project-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #7b2ff7;
+}
+
+.project-desc {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.tech-box {
+  margin: 10px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-tag {
+  border: 1px solid #7b2ff7;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  transition: 0.3s ease;
+
+}
+
+.tech-tag:hover {
+  transform: scale(1.1);
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.proj-live,
+.proj-code {
+  flex: 1;
+  text-decoration: none;
+  text-align: center;
+  background: #7b2ff7;
+  padding: 10px 14px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.proj-live:hover {
+  background: #7b2ff7;
+}
+
+.proj-code {
+  background: #7b2ff7;
+}
+
+.proj-code:hover {
+  background: #7b2ff7;
+}
+.project_image{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 480px) {
+  .project-name {
+    font-size: 1.3rem;
+  }
+  .projects-title {
+    font-size: 2rem;
+  }
+
+  .projects-container {
+  padding: 2rem 1rem;
+}
+}

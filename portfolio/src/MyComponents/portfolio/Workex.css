@@ -1,0 +1,133 @@
+.timeline-section {
+  background-color: black;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.timeline-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #7b2ff7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.timeline-container {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 20px;
+  border-left: 3px solid #7b2ff7;
+  max-width: 900px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -30px;
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(135deg, #7b2ff7);
+  border-radius: 50%;
+  box-shadow: 0 0 10px #9d73e0;
+}
+
+.timeline-content {
+  backdrop-filter: blur(10px);
+  border: 1px solid #3b3b3c;
+  padding: 1.5rem 1.5rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  text-align: justify;
+}
+
+.timeline-content:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px #7b2ff7;
+}
+
+.timeline-content h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.timeline-content h5 {
+  color: #7b2ff7;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.duration {
+  color: #bbb;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+.client {
+  color: #ddd;
+  font-style: italic;
+  margin-bottom: 0.8rem;
+}
+
+.timeline-content ul {
+  padding-left: 1.2rem;
+}
+
+.timeline-content li {
+  margin-bottom: 0.4rem;
+  color: #d0d0d0;
+  line-height: 1.6;
+}
+
+.tech {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #7b2ff7;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  
+
+  .timeline-section{
+    padding: 1rem 1rem;
+  }
+  .timeline-container {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .timeline-dot {
+    display: none;
+  }
+
+  .timeline-content {
+    border-left: 4px solid #7b2ff7;
+    padding-left: 1.2rem;
+    margin-left: 0.5rem;
+  }
+
+  .timeline-content:hover {
+    transform: none;
+    box-shadow: 0 8px 20px #ae82f4;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-content ul li {
+    font-size: 0.95rem;
+  }
+
+  .timeline-title {
+    font-size: 1.7rem;
+  }
+}

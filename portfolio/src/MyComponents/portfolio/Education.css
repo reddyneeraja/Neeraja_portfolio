@@ -1,0 +1,126 @@
+.edu-section {
+  padding: 4rem 12rem;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.edu-title {
+  margin-top: -4rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #7b2ff7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+
+
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1rem;
+}
+
+
+.edu-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  transition: all 0.4s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+
+.edu-badge {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  background: linear-gradient(90deg, #7b2ff7);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.edu-body h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.institute {
+  color: #d0d0d0;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.edu-footer {
+  font-size: 0.95rem;
+  color: #ccc;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.edu-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(135deg, #7b2ff7);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.edu-card:hover::before {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .edu-section {
+    padding: 1rem 1rem;
+  }
+
+  .edu-title {
+    font-size: 1.8rem;
+    margin-top: -1rem;
+  }
+
+  .edu-card {
+    padding: 1.5rem;
+  }
+
+  .edu-body h3 {
+    font-size: 1.15rem;
+  }
+
+  .institute {
+    font-size: 0.9rem;
+  }
+
+  .edu-footer {
+    font-size: 0.85rem;
+  }
+}

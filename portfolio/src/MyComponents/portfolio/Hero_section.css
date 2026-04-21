@@ -1,0 +1,139 @@
+
+.carousel_cont {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: #fff;
+  overflow: hidden;
+  padding: 8rem 2rem 4rem; 
+  box-sizing: border-box;
+}
+
+.hero-content {
+  max-width: 600px;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-content h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlight {
+  background: linear-gradient(90deg,  #7b2ff7);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-content p {
+  color: #d0d0d0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.btn-gradient {
+  background-color: #7b2ff7;
+  border: none;
+  padding: 0.9rem 0;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  transform: scale(1.05);
+}
+
+.hero-image-wrapper {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  margin: 0 auto;
+}
+
+.rotating-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient( #7b2ff7,#fff 98%);
+  animation: spin 6s linear infinite;
+  z-index: 1;
+  filter: drop-shadow(0 0 10px rgba(123, 47, 247, 0.6));
+}
+
+.image-center {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2;
+  background: #000;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel_cont {
+    padding-top: 7rem; 
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-image-wrapper {
+    width: 200px;
+    height: 200px;
+    margin-top: 2rem;
+  }
+}
+
+
